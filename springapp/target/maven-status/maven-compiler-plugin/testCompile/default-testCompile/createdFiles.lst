@@ -1,0 +1,6 @@
+com\examly\springapp\exception\GlobalExceptionHandlerTest.class
+com\examly\springapp\FitnessTrackerApplication.class
+com\examly\springapp\controller\WorkoutControllerTest.class
+com\examly\springapp\FitnessTrackerApplication$1.class
+com\examly\springapp\exception\GlobalExceptionHandlerTest$TestController.class
+com\examly\springapp\exception\WorkoutValidationTest.class
