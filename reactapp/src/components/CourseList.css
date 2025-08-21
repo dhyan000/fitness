@@ -1,0 +1,192 @@
+ .course-list-container {
+   padding: 25px;
+   background: linear-gradient(135deg, #f0f9ff, #e0f2fe);
+   border-radius: 12px;
+   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.05);
+   animation: fadeInUp 0.6s ease-in-out;
+ }
+
+
+ .filter-controls {
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
+   width: 100%;
+   max-width: 1200px;
+   margin-bottom: 20px;
+   padding: 15px;
+   background: #fff;
+   border-radius: 8px;
+   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+ }
+
+ .filter-button {
+   background-color: #007bff;
+   color: white;
+   border: none;
+   padding: 8px 15px;
+   border-radius: 5px;
+   cursor: pointer;
+   font-weight: bold;
+   transition: background 0.2s ease;
+ }
+
+ .filter-button:hover {
+   background-color: #0056b3;
+ }
+
+
+ .range-filters {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 15px;
+   align-items: flex-end;
+ }
+
+ .range-filters div {
+   display: flex;
+   flex-direction: column;
+ }
+
+ .range-filters label {
+   font-size: 14px;
+   margin-bottom: 5px;
+ }
+
+ .range-filters input {
+   padding: 6px 8px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   width: 120px;
+ }
+
+ .range-filters button {
+   background-color: #28a745;
+   color: white;
+   border: none;
+   padding: 8px 15px;
+   border-radius: 5px;
+   cursor: pointer;
+   font-weight: bold;
+   transition: background 0.2s ease;
+ }
+
+ .range-filters button:hover {
+   background-color: #1e7e34;
+ }
+
+ .course-grid {
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   gap: 20px;
+ }
+
+ .course-card {
+   background: white;
+   padding: 18px;
+   border-radius: 12px;
+   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+ }
+
+ .card-actions {
+   margin-top: 10px;
+   display: flex;
+   gap: 8px;
+ }
+.course-image {
+    width: 100%;
+      height: 150px;
+        object-fit: cover;
+          border-radius: 6px;
+          }
+ .edit-btn,
+ .delete-btn {
+   flex: 1;
+   padding: 6px 10px;
+   border-radius: 6px;
+   font-size: 0.85rem;
+   border: none;
+   cursor: pointer;
+   transition: all 0.3s ease;
+ }
+
+ .edit-btn {
+   background-color: #facc15;
+   color: #78350f;
+ }
+
+ .edit-btn:hover {
+   background-color: #eab308;
+ }
+
+ .delete-btn {
+   background-color: #ef4444;
+   color: white;
+ }
+
+ .delete-btn:hover {
+   background-color: #dc2626;
+ }
+
+
+ .course-card:hover {
+   transform: scale(1.03);
+   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+ }
+
+ .course-card h3 {
+   color: #1e3a8a;
+   font-size: 1.2rem;
+   margin-bottom: 8px;
+ }
+
+ .course-card p {
+   font-size: 14px;
+   color: #475569;
+   margin-bottom: 5px;
+ }
+
+ .status {
+   display: inline-block;
+   margin-top: 8px;
+   padding: 5px 10px;
+   border-radius: 6px;
+   font-size: 12px;
+   font-weight: 500;
+ }
+
+ .status-active {
+   background-color: #d1fae5;
+   color: #065f46;
+ }
+
+ .status-inactive {
+   background-color: #fee2e2;
+   color: #991b1b;
+ }
+
+ .course-grid {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 16px;
+ }
+
+ .course-card {
+   border: 1px solid #ccc;
+   padding: 16px;
+   border-radius: 8px;
+   background: white;
+ }
+
+ @keyframes fadeInUp {
+   from {
+     opacity: 0;
+     transform: translateY(15px);
+   }
+
+   to {
+     opacity: 1;
+     transform: translateY(0);
+   }
+ }

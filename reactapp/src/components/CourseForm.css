@@ -1,0 +1,114 @@
+.course-form {
+    background: linear-gradient(1352deg, #e3f2fd, #f8faff);
+    padding: 25px;
+    border-radius: 12px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    animation: fadeInUp 0.6s ease-in-out;
+    transition: transform 0.2 ease;
+    }
+
+    .course-form h2 {
+    text-align: center;
+    color: #1e3a8a;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    }
+
+    .course-form label {
+    display: block;
+    margin-bottom: 15px;
+    font-weight: 500;
+    color: #334155;
+    }
+    .course-form:hover{
+        transform: translateY(-2px);
+    }
+    .course-form input,
+    .course-form textarea,
+    .course-form select {
+    width: 60%;
+    padding: 10px 12px;
+    margin: 6px auto 15px auto;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    background-color: white;
+    display:block
+    }
+
+    .course-form input:focus,
+    .course-form textarea:focus,
+    .course-form select:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 8px rgba(37, 99, 235, 0.3);
+    outline: none;
+    }
+
+    .course-form textarea {
+    resize: none;
+    height: 80px;
+    }
+
+    .form-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    }
+
+    .form-buttons button {
+    padding: 10px 16px;
+    font-size: 14px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+    }
+
+    .form-buttons button[type="submit"] {
+    background-color: #2563eb;
+    color: white;
+    }
+
+    .form-buttons button[type="submit"]:hover {
+    background-color: #1e40af;
+    transform: translateY(-2px);
+    }
+
+    .form-buttons button[type="button"] {
+    background-color: #f1f5f9;
+    color: #475569;
+    }
+
+    .form-buttons button[type="button"]:hover {
+    background-color: #e2e8f0;
+    transform: translateY(-2px);
+    }
+
+    .error {
+    display: block;
+    color: #dc2626;
+    font-size: 12px;
+    margin-top: 4px;
+    }
+
+    .success {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #d1fae5;
+    color: #065f46;
+    border-radius: 8px;
+    }
+
+    @keyframes fadeInUp {
+    from {
+    opacity: 0;
+    transform: translateY(15px);
+    }
+    to {
+    opacity: 1;
+    transform: translateY(0);
+    }
+    }

@@ -1,0 +1,169 @@
+    .app-container {
+    display: flex;
+    min-height: 100vh;
+    background: url('https://lh3.googleusercontent.com/pw/AP1GczPeMe2mpb-WYHUpmlQpct-1Qvs5O8QGw6i-vh0TDYOgBPbFX1NRJ0OrGs9Jf07vz1Bijftxug2ttZ9wsbIiqcQSJriQJhkEcX6Ms3MRY-MFbqob21E=w2400') no-repeat center center/cover;
+    }
+    .brand-logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    position: relative;
+    left: 25%; 
+    }
+
+    .brand-logo .brand-icon {
+    font-size: 2.2rem;
+    }
+
+    .brand-logo h2 {
+    font-family: 'Poppins', sans-serif; 
+    font-size: 1.8rem;
+    font-weight: 700;
+    background: linear-gradient(90deg, rgb(34, 11, 245), rgb(72, 36, 251)); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 1px;
+    }
+
+
+    .left-panel {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    padding: 20px 40px; 
+    }
+
+    .right-panel {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 15px;
+    width: 570px;
+    max-height: 80vh;
+    overflow-y: auto;
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.25);
+    animation: fadeInRight 0.6s ease-out;
+    transition: box-shadow 0.3s ease, border 0.3s ease;
+    border: 2px solid transparent;
+    }
+
+    .right-panel:hover {
+    border: 2px solid #3b82f6;
+    box-shadow: 0px 0px 20px rgba(59, 130, 246, 0.6); 
+    }
+
+
+
+
+    .right-panel .main-content {
+    padding-left: 10px;
+    }
+
+    @keyframes fadeInRight {
+    from {
+    opacity: 0;
+    transform: translate(50px, -50%);
+    }
+    to {
+    opacity: 1;
+    transform: translate(0, -50%);
+    }
+    }
+
+    .right-panel form input,
+    .right-panel form textarea,
+    .right-panel form select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    }
+
+    .right-panel form input:focus,
+    .right-panel form textarea:focus,
+    .right-panel form select:focus {
+    border-color: #4a90e2;
+    box-shadow: 0px 0px 8px rgba(74, 144, 226, 0.4);
+    }
+
+    .right-panel form button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #4a90e2, #005bea);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.3s ease;
+    }
+
+    .right-panel form button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #005bea, #4a90e2);
+    }
+
+    .app-header {
+    padding: 20px;
+    background: rgba(37, 99, 235, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    text-align: center;
+    }
+
+    .app-header h1 {
+    font-size: 1.4rem;
+    color: #1e3a8a;
+    }
+
+    .navbar {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-btn {
+    padding: 8px 14px;
+    border-radius: 8px;
+    border: none;
+    background-color: #f1f5f9;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    }
+
+    .nav-btn:hover {
+    background-color: #dbeafe;
+    }
+
+    .nav-btn.active {
+    background-color: #2563eb;
+    color: white;
+    }
+
+    .main-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    }
+
+    @keyframes slideInRight {
+    from {
+    transform: translateX(50px);
+    opacity: 0;
+    }
+    to {
+    transform: translateX(0);
+    opacity: 1;
+    }
+    }
