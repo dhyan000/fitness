@@ -1,0 +1,19 @@
+.auth-page-container {
+    background-image: url('https://t4.ftcdn.net/jpg/01/02/52/83/360_F_102528344_XfIuLtPSSBIIR3NYtLRe1QOBUgkdS8Cp.jpg');
+    
+    /* Change size to 'contain' to ensure the whole image is visible */
+    background-size: contain;
+    
+    /* Add a black background for the empty space */
+    background-color: #000;
+    
+    /* Prevent the image from tiling */
+    background-repeat: no-repeat;
+
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}

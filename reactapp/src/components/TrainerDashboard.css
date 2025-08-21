@@ -1,0 +1,24 @@
+.trainer-dashboard-container {
+    background-image: url('https://t3.ftcdn.net/jpg/07/15/99/52/360_F_715995279_YVgWM9PbuP4mAXmQgsPalhvex5HYGTJN.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 2rem;
+    border-radius: 16px;
+    color: white;
+}
+
+.trainer-dashboard-container h1,
+.trainer-dashboard-container h2 {
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+}
+
+.trainer-dashboard-container .dashboard-nav button {
+    color: #fff;
+    font-weight: 500;
+}
+
+.trainer-dashboard-container .dashboard-nav button.active {
+    color: var(--primary-color);
+    border-bottom-color: var(--primary-color);
+}
